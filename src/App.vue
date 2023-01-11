@@ -1,4 +1,4 @@
-<template class="background">
+<template>
   <NavBar/>
   <router-view/>
 </template>
@@ -20,14 +20,8 @@ export default{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-color: #030701;
   color-scheme: white;
 }
 
-.background{
-  background-color: #030701;
-  /* background: url(https://i.postimg.cc/W1cxQ1z7/pexels-photo-1933317.jpg);
-  height: 100vh; */
-}
 
 </style>
