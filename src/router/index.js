@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue'
 import AboutView from '../views/AboutView.vue'
 import ResumeView from '../views/ResumeView.vue'
 import ProjectsView from '../views/ProjectsView.vue'
-import TestimonialsView from '../views/TestimonnialView.vue'
+import TestimonialsView from '../views/TestimonialView.vue'
 import ContactView from '../views/ContactView.vue'
 
 const routes = [

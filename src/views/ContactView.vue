@@ -51,52 +51,6 @@
 </template>
 
 <script>
-// Assign names
-    const name = document.querySelector("#name");
-    const surname =document.querySelector("#surname");
-    const email =document.querySelector("#email");
-    const company =document.querySelector("#company");
-    const message =document.querySelector("#message");
-    const form = document.querySelector("#submit-form");
-
-// Form Validation
-    function checkValidations(){
-        // Only allow letters to be displayed in the section
-        // Lower and uppercase letters
-        let letters = /^[a-zA-Z\s]*$/;
-        // let letters = /^[a-zA-Z\s]+$/;
-
-    const name = name.value.trim();
-    const surname = surname.value.trim();
-    const email = email.value.trim();
-    const company = company.value.trim();
-    const message = message.value.trim();
-
-    // Throw error message if non-letters are added
-if (name === "") {
-    document.querySelector(".name-error").classList.add("error");
-
-    document.querySelector(".name-error").innerText="Please complete this field!";
-} else{
-    if (!letters.test(name)){
-        document.querySelector(".name-error").classList.add("error");
-        document.querySelector(".name-error").innerText = "Only letters in this field please";
-    } else{}
-}
-
-// Throw error if not a valid email added
-if (email === "") {
-     document.querySelector(".name-error").classList.add("error");
-     document.querySelector(".name-error").innerText="Please complete this field!";
-  } else {
-    if (!letters.test(name)) {
-      document.querySelector(".name-error").classList.add("error");
-      document.querySelector(".name-error").innerText = "Only letters in this field please";
-    } else {
-      
-    }
-  }
-}
 
     export default {
         name
@@ -121,6 +75,7 @@ body {
 
 div.form {
   background-color: #f7ffd7;
+  border-radius: 15px;
 }
 .contact-wrapper {
   margin: auto 0;

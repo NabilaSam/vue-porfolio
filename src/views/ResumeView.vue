@@ -17,15 +17,12 @@
       "
     >
     <li class="timeline" v-for="details in resume">
-        <div class="timeline-badge"><i class="fas fa-atom"></i></div>
+        <div class="timeline-badge"><i class="fas fa-code"></i></div>
         <div class="timeline-panel">
           <div class="timeline-heading">
             <h4 class="timeline-title">{{ details.name }}</h4>
-            <h6>
-              Employer: <br />
-              <i class="fas fa-university"></i> The University of the Western
-              Cape
-            </h6>
+            <h4 class="timeline-title"><i class="fas fa-university"></i>{{ details.place }}</h4>
+            
             <p>
               <small style="color: rgb(27, 25, 25)"
                 ><i class="fa fa-calendar"></i> {{ details.period }}</small
@@ -45,49 +42,37 @@
 
 <script>
    export default {
-        resume: "left-timeline",
+        resume: "resume",
         data(){
             return{
                 resume:[
                     {
-                        name: 'Life Choices Coding Academy',
+                        name: '',
+                        place: 'Life Choices Coding Academy',
                         period: ' September 2022 – Present',
+                        badge: '<i class="fa fa-code"></i>',
                         description: "This bootcamp has introduced me to html, css, bootstrap, javascript and vue.js. I've had the opportunity to design and create webpages (such as this one)."
+                    },
+                    {
+                        name: 'Freelance Writer',
+                        place: ' Blue Apple Real Estate School',
+                        period: 'September 2021 – March 2022',
+                        badge: '<i class="fas fa-pen"></i>',
+                        description: "Duties-Setting up examination questions. Proof reading examinations. Programmes used-Google Excel Sheets. Google Docs. Freelancer.com"
                     },
                     {
                         name: 'BSc Chemical Science degree',
+                        place:"The University of the Western Cape",
                         period: ' 2018 – 2021',
+                        badge: 'class="fas fa-graduation-cap"',
                         description: "Four years worth of practical laboratory experience, research, scientific report writing, high accuracy measurements and data analysis"
                     },
-
                     {
-                        name: '',
-                        period: ' September 2022 – Present',
-                        description: "This bootcamp has introduced me to html, css, bootstrap, javascript and vue.js. I've had the opportunity to design and create webpages (such as this one)."
-                    }
-
-                ]
-            }
-        },
-        resume: "right-timeline",
-        data(){
-            return{
-                resume:[
-                    {
-                        name: 'Life Choices Coding Academy',
-                        period: ' September 2022 – Present',
-                        description: "This bootcamp has introduced me to html, css, bootstrap, javascript and vue.js. I've had the opportunity to design and create webpages (such as this one)."
-                    },
-                    {
-                        name: 'BSc Chemical Science degree',
-                        period: ' 2018 – 2021',
-                        description: "Four years worth of practical laboratory experience, research, scientific report writing, high accuracy measurements and data analysis"
-                    },
-
-                    {
-                        name: '',
-                        period: ' September 2022 – Present',
-                        description: "This bootcamp has introduced me to html, css, bootstrap, javascript and vue.js. I've had the opportunity to design and create webpages (such as this one)."
+                        name: 'University Chemistry Tutor',
+                        place:"The University of the Western Cape",
+                        period: 'February 2021 – November 2021',
+                        badge: 'class="fas fa-atom"',
+                        description: "Duties- Tutoring first year chemical science students. Marking weekly assignments. Tutoring assigned group. Skills- Communication and collaboration. Leadership. Team building. Conflict Resolution"
                     }
 
                 ]
@@ -102,16 +87,17 @@
   padding: 20px 0 20px;
   position: relative;
   color: black;
+  /* margin-right: auto; */
 }
 .timeline:before {
   top: 0;
   bottom: 0;
-  position: absolute;
+  position:absolute;
   content: " ";
   width: 3px;
   background-color: #ffffff;
-  left: 50%;
-  margin-left: -1.5px;
+  left: 80%;
+  /* left: 50%; */
 }
 .timeline > li {
   margin-bottom: 20px;
@@ -133,40 +119,16 @@
   clear: both;
 }
 .timeline > li > .timeline-panel {
-  width: 46%;
-  float: left;
+  width: 60%;
+  float: right;
+  margin-right: 23%;
   border: 1px solid #d4d4d4;
-  border-radius: 2px;
+  border-radius: 25px;
   background-color: rgb(248, 242, 242, 0.8);
   padding: 20px;
   position: relative;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.175);
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.175);
-}
-
-/* Arrow between timeline and cards */
-.timeline > li > .timeline-panel:before {
-  position: absolute;
-  top: 26px;
-  right: -15px;
-  display: inline-block;
-  border-top: 15px solid transparent;
-  border-left: 15px solid #ccc;
-  border-right: 0 solid #ccc;
-  border-bottom: 15px solid transparent;
-  content: " ";
-}
-.timeline > li > .timeline-panel:after {
-  position: absolute;
-
-  top: 27px;
-  right: -14px;
-  display: inline-block;
-  border-top: 14px solid transparent;
-  border-left: 14px solid #fff;
-  border-right: 0 solid #fff;
-  border-bottom: 14px solid transparent;
-  content: " ";
 }
 
 /* The circle on the timeline */
@@ -179,7 +141,7 @@
   text-align: center;
   position: absolute;
   top: 16px;
-  left: 50%;
+  left: 80%;
   margin-left: -25px;
   background-color: #999999;
   z-index: 100;
@@ -187,25 +149,6 @@
   border-top-left-radius: 50%;
   border-bottom-right-radius: 50%;
   border-bottom-left-radius: 50%;
-}
-
-/* Shifts cards to the right side of timeline */
-.timeline > li.timeline-inverted > .timeline-panel {
-  float: right;
-}
-
-.timeline > li.timeline-inverted > .timeline-panel:before {
-  border-left-width: 0;
-  border-right-width: 15px;
-  left: -15px;
-  right: auto;
-}
-
-.timeline > li.timeline-inverted > .timeline-panel:after {
-  border-left-width: 0;
-  border-right-width: 14px;
-  left: -14px;
-  right: auto;
 }
 .timeline-badge {
   background-color: #76d337 !important;
