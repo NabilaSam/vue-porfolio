@@ -4,73 +4,15 @@
         <div class="container mx-auto mt-4">
             <div class="row">
               <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-            <img src="../imgs/Projects/netflix home.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Dummy netflix</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Landing page</h6>
-              <a href="https://nabznetflix.netlify.app/" class="projbtn mr-2"><i class="fas fa-link"></i> Hosted Site</a>
-              <a href="https://github.com/NabilaSam/HTML-lesson-1" class="projbtn "><i class="fab fa-github"></i> Github</a>
+                <div class="card" style="width: 18rem;" v-for="item in projects">
+               <img src={{item.img}} class="card-img-top" alt="...">
+               <div class="card-body">
+                 <h5 class="card-title">{{item.name}}</h5>
+                 <a href="{{item.hosted}}" class="projbtn mr-2"><i class="fas fa-link"></i> Hosted Site</a>
+                 <a href={{ item.github }} class="projbtn "><i class="fab fa-github"></i> Github</a>
             </div>
             </div>
-              </div>    
-                 <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../imgs/Projects/netflixtables.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Netflix</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Tables</h6>
-               <a href="https://nabznetflix.netlify.app/" class="projbtn  mr-2"><i class="fas fa-link"></i> Hosted Site</a>
-              <a href="https://github.com/NabilaSam/HTML-lesson-1" class="projbtn"><i class="fab fa-github"></i> Github</a>
-            </div>
-            </div>
-              </div>    
-                    <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../imgs/Projects/netflixtabs.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Same Netflix</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Different tab</h6>
-             <a href="https://nabznetflix.netlify.app/" class="projbtn mr-2"><i class="fas fa-link"></i> Hosted Site</a>
-              <a href="https://github.com/NabilaSam/HTML-lesson-1" class="projbtn "><i class="fab fa-github"></i> Github</a>
-            </div>
-            </div>
-            </div>
-              
-              <div class="col-md-4">
-                <div class="card" style="width: 18rem;">
-            <img src="../imgs/Projects//netflixwatch.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Netflix again</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Watch options</h6>
-              <a href="https://nabznetflix.netlify.app/" class="projbtn mr-2"><i class="fas fa-link"></i> Hosted Site</a>
-              <a href="https://github.com/NabilaSam/HTML-lesson-1" class="projbtn"><i class="fab fa-github"></i> Github</a>
-            </div>
-            </div>
-              </div>    
-                 <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../imgs/Projects//carouselyoga.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Yoga</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">First Carousel</h6>
-              <a href="https://carousel-yoga.netlify.app/" class="projbtn mr-2"><i class="fas fa-link"></i> Hosted Site</a>
-              <a href="https://github.com/NabilaSam/Carousel" class="projbtn"><i class="fab fa-github"></i> Github</a>
-            </div>
-            </div>
-              </div>    
-                    <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
-            <img src="../imgs/Projects/ID+flip cards.png" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Flips cards</h5>
-                  <h6 class="card-subtitle mb-2 text-muted">Including ID Card</h6>
-              <a href="https://idcardandflipcards.netlify.app/" class="projbtn mr-2"><i class="fas fa-link"></i> Hosted Site</a>
-              <a href="https://github.com/NabilaSam/flipcards.git" class="projbtn"><i class="fab fa-github"></i> Github</a>
-            </div>
-          </div>
-      </div>
-                
+         </div>
        </div>
      </div>
     </main>
@@ -78,6 +20,36 @@
 
 <script>
     export default {
+      data(){
+        return{
+          projects:[
+            {name: "E commerce Website",
+          img: url('https://i.postimg.cc/pXS4gsPj/ecomerce.png'),
+          hosted: url('https://nabzjseomp.netlify.app/'),
+          github: url('https://github.com/NabilaSam/JSEOMP'),},
+            {name: "javascript CRUD functionality",
+          img: url('https://i.postimg.cc/MpfWfc9C/Filtersection.png'),
+          hosted: url('https://nabzjseomp.netlify.app/'),
+          github: url('https://github.com/NabilaSam/JSEOMP'),},
+            {name: "Javascript calculator",
+          img: url('https://i.postimg.cc/rmF3W38D/calculator.png'),
+          hosted: url('https://nabzjscalculator.netlify.app/'),
+          github: url('https://github.com/NabilaSam/JSCalculator'),},
+            {name: "Netflix",
+          img: url('https://i.postimg.cc/bNV2xtpL/Capture.png'),
+          hosted: url('https://nabznetflix.netlify.app/'),
+          github: url('https://github.com/NabilaSam/HTML-lesson-1'),},
+            {name: "First porfolio",
+          img: url('https://i.postimg.cc/bYF0qMWm/firstportfolio.png'),
+          hosted: url('https://nabzsamportfolio.netlify.app/index.html'),
+          github: url('https://github.com/NabilaSam/nabilaPortfolio'),},
+            {name: "First Carousel",
+          img: url('https://i.postimg.cc/XvHqwMwh/carousel.png'),
+          hosted: url('https://nabzsamportfolio.netlify.app/html/testimonial.html'),
+          github: url('https://github.com/NabilaSam/nabilaPortfolio'),},
+          ]
+        }
+      }
         
     }
 </script>
