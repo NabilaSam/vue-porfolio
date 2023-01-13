@@ -1,5 +1,7 @@
 <template>
-    <div class="footer">@copyright 2023 Nabila</div>
+    <div>
+
+    </div>
 </template>
 
 <script>
@@ -9,7 +11,5 @@
 </script>
 
 <style scoped>
-    .footer{
-    background-color: #030701;
-    }
+
 </style>
