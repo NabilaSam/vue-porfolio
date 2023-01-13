@@ -100,7 +100,7 @@ nav a {
 }
 
 nav a.router-link-exact-active {
-    color: #76d337;
+    color:   #76d337;
 }
 
 .web-title {

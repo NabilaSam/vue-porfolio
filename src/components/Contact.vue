@@ -32,17 +32,17 @@
             <div class="contacts contact-wrapper">
                 <h5>Contact Me</h5>
                 <ul>
-                    <li> <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/" target="_blank"><i class="fa fa-linkedin fa-2x"></i> :linkedin</a> <br>
+                    <li> <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/" target="_blank"><i class="fa fa-linkedin fa-2x"></i> linkedin</a> <br>
                     </li>
 
                     <li>
-                        <a href="https://github.com/NabilaSam"><i class="fa fa-github fa-2x" target="_blank"> </i>: NabilaSam </a> <br>
+                        <a href="https://github.com/NabilaSam"><i class="fa fa-github fa-2x" target="_blank"> </i> NabilaSam </a> <br>
                     </li>
 
-                    <li> <a href="mailto: nabilasamsodien@gmail.com" target="_blank"> <i class="fa fa-envelope fa-2x"> </i> : nabilasamsodien@gmail.com</a> <br>
+                    <li> <a href="mailto: nabilasamsodien@gmail.com" target="_blank"> <i class="fa fa-envelope fa-2x"> </i> nabilasamsodien@gmail.com</a> <br>
                     </li>
 
-                    <li> <a href="tel:+27824749772"> <i class="fa fa-phone fa-2x"> </i> : +27 82 474 9772</a> <br>
+                    <li> <a href="tel:+27824749772"> <i class="fa fa-phone fa-2x"> </i> +27 82 474 9772</a> <br>
                     </li>
                 </ul>
             </div>
@@ -74,7 +74,7 @@ body {
 }
 
 div.form {
-  background-color: #f7ffd7;
+  background-color: #ffffff7e;
   border-radius: 15px;
 }
 .contact-wrapper {

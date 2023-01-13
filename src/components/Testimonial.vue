@@ -42,6 +42,7 @@
       </div>
   </section>
 </template>
+
 <script>
 export default {
   data() {
@@ -102,16 +103,4 @@ export default {
 #testimonials {
   min-height: 100vh;
 }
-/* .carousel {
-  display: flex;
-} */
-
-/* .carousel-item {
-  display: flex;
-  padding: 10px;
-} */
-
-/* img {
-  width: 150px;
-} */
 </style>
