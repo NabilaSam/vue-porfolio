@@ -1,11 +1,8 @@
 <template>
-    <div class="landing" 
-    style="background: url(https://i.postimg.cc/XYrB3sSB/1472869.jpg) no-repeat center center/cover;
-    
-">
-        <h1>Hi, Welcome to Nabila's portfolio</h1>
+    <div id="home" class="container landing" style="margin-top:20%;">
+        <h1>Hi, Welcome to Nabila Samsodien's portfolio</h1>
 
-        <button>Browse</button>
+        <button class="btn btn-rounded"> <a href="#projects"> View projects</a></button>
     </div>
 </template>
 
@@ -22,11 +19,22 @@
 
     }
     .landing{
-        /* background: url(https://i.postimg.cc/XYrB3sSB/1472869.jpg) no-repeat center center/cover; */
-        min-height: 100vh;
+       min-height: 100vh;
     }
 
-    button{
-    background-color: linear-gradient(to bottom, #76d337, black);    
+    button a{
+        text-decoration: none;
+        background-color: #030701;
+        color: #f7ffd7;
+        border: 4px solid;
+        padding: 2px;
+        text-decoration: none;
+        border-image: linear-gradient( to bottom right, #76d337,  #030701);
+        border-color: linear-gradient( to bottom right, #76d337,  #030701);
+ }
+
+    button a:hover{
+        background:linear-gradient( to bottom right, #76d337,  #030701); ;
+  
     }
 </style>

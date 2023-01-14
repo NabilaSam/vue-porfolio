@@ -1,6 +1,7 @@
 <template>
-  <section id="experience" class="body2">
-    <h3 style="text-align: center;
+  <section id="resume" class="body2">
+    <h3 style="color:#ffffff;
+    text-align: center;
         margin-top: 2rem;
         text-shadow: 0.5px 0.5px black;">
       Education & Experience

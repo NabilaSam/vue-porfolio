@@ -1,14 +1,14 @@
 <template>
-    <main class="min-vh-100">
+    <main id="projects" class="min-vh-100">
       <h2 class="text-center" style="color:#f2f2f2; margin-top: 2rem;">Projects I've Hosted with their corresponding github links</h2>
-        <div class="row container" style="margin:auto;">
-              <div class="col-sm-3 mx-5" v-for="item in projects">
-                <div class="card" style="width: 18rem;">
+        <div class="row container mx-auto">
+              <div class="col-12 col-md-4" v-for="item in projects">
+                <div class="card" style="width: 100%;">
                <img :src='item.img' class="card-img-top image" alt="...">
                <div class="card-body">
                  <h5 class="card-title">{{item.name}}</h5>
-                 <a :href="item.hosted" class="projbtn mr-2" style="float:left;"><i class="fas fa-link"></i> Hosted Site </a>
-                 <a :href="item.github" class="projbtn " style="float:right;"><i class="fab fa-github"></i> Github</a>
+                 <a :href="item.hosted" target="_blank" class="projbtn mr-2" style="float:left;"><i class="fas fa-link"></i> Hosted Site </a>
+                 <a :href="item.github" target="_blank" class="projbtn " style="float:right;"><i class="fab fa-github"></i> Github</a>
             </div>
             </div>
          </div>

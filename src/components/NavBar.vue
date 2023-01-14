@@ -1,56 +1,36 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark" style="width:100%;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand" href="#">Nabila</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <router-link to="/"><i class="fa fa-home"></i> Home</router-link> |
-
-                    <router-link to="/about"><i class="fa fa-info"></i> About</router-link> |
-
-                    <router-link to="/resume"><i class="fa fa-briefcase"></i> Resume</router-link> |
-
-                    <router-link to="/projects"><i class="fa fa-laptop"></i> Projects</router-link> |
-
-                    <router-link to="/testimonials"><i class="fa fa-people-group"></i> Testimonials</router-link> |
-
-                    <router-link to="/contact"><i class="fa fa-phone"></i> Contact</router-link>
-
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <router-link to="/" ><i class="fa fa-home"></i> Home</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/about"><i class="fa fa-info"></i> About</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/resume"><i class="fa fa-briefcase"></i> Resume</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/projects"><i class="fa fa-laptop"></i> Projects</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/testimonials"><i class="fa fa-people-group"></i> Testimonials</router-link> |
+                    </li>
+                    <li class="nav-item">
+                        <router-link to="/contact"><i class="fa fa-phone"></i> Contact</router-link>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-        <!-- </nav>
-   <nav class="nav">
-    <div class="web-title"><img src="https://i.postimg.cc/mgrv9Pqx/Nabila-Logo.png"></div>
-
-      <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
-          <div class="nav-links">
-            <ul>
-            <router-link to="/"><i class="fa fa-home"></i> Home</router-link> |
-        
-            <router-link to="/about"><i class="fa fa-info"></i> About</router-link> |
-        
-            <router-link to="/resume"><i class="fa fa-briefcase"></i> Resume</router-link> |
-        
-            <router-link to="/projects"><i class="fa fa-laptop"></i> Projects</router-link> |
-        
-            <router-link to="/testimonials"><i class="fa fa-people-group"></i> Testimonials</router-link> |
-        
-            <router-link to="/contact"><i class="fa fa-phone"></i> Contact</router-link>
-       
-            </ul>
-            </div>
-   </nav> -->
 </template>
 
 <script>
@@ -67,6 +47,7 @@ nav {
     align-items: center;
     max-height: max-content;
     background-color: #030701;
+    z-index: 1;
 }
 
 

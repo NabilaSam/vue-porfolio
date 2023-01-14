@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">@copyright 2023 Nabila</div>
+    <div class="footer fixed-bottom">@copyright 2023 Nabila</div>
 </template>
 
 <script>

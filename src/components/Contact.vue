@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div id="contact" class="container">
         <div class="wrapper">
             <div class="form">
                 <h2>Contact Form</h2>
@@ -30,7 +30,7 @@
             </div>
 
             <div class="contacts contact-wrapper">
-                <h5>Contact Me</h5>
+                <h4 style="color:#ffffff;">Contact Me</h4>
                 <ul>
                     <li> <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/" target="_blank"><i class="fa fa-linkedin fa-2x"></i> linkedin</a> <br>
                     </li>

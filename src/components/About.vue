@@ -1,10 +1,10 @@
 <template>
-    <div class="about min-vh-100">
+    <div id="about" class="about min-vh-100" style="margin-top:30px;">
       <h1 style="color: #f7ffd7">About Me</h1>
       <div class="card slide1"> 
         I am an optimistic ,focused individual who is keen to improve and develop new skills.</div>
   
-        <div class="card slide2">
+        <div class="card slide2" >
           I consider myself to be deadline-driven and capable of adapting to new environments.</div>
   
         <div class="card slide3">
@@ -37,6 +37,8 @@
     width: 70%;
     display: inline-block;
     margin: 1rem;
+    color: white;
+    background-color: transparent;
     /* box-shadow: 0 1px 2px 0 #76d337; */
     max-width: 60%;
     border-radius: 0%;
