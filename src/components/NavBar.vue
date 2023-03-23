@@ -1,5 +1,5 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-dark" style="width:100%;">
+    <nav class="navbar navbar-expand-lg bg-black" style="width:100%;">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Nabila</a>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
@@ -9,23 +9,23 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-                    <li class="nav-item">
-                        <router-link to="/" ><i class="fa fa-home"></i> Home</router-link> |
+                    <li class="nav-item mx-2">
+                        <router-link class="link" to="/" ><i class="fa fa-home"></i> Home</router-link> 
                     </li>
-                    <li class="nav-item">
-                        <router-link to="/about"><i class="fa fa-info"></i> About</router-link> |
+                    <li class="nav-item mx-2">
+                        <router-link class="link" to="/about"><i class="fa fa-info"></i> About</router-link> 
                     </li>
-                    <li class="nav-item">
-                        <router-link to="/resume"><i class="fa fa-briefcase"></i> Resume</router-link> |
+                    <li class="nav-item mx-2">
+                        <router-link class="link" to="/resume"><i class="fa fa-briefcase"></i> Resume</router-link> 
                     </li>
-                    <li class="nav-item">
-                        <router-link to="/projects"><i class="fa fa-laptop"></i> Projects</router-link> |
+                    <li class="nav-item mx-2">
+                        <router-link class="link" to="/projects"><i class="fa fa-laptop"></i> Projects</router-link> 
                     </li>
-                    <li class="nav-item">
-                        <router-link to="/testimonials"><i class="fa fa-people-group"></i> Testimonials</router-link> |
+                    <li class="nav-item mx-2">
+                        <router-link class="link" to="/testimonials"><i class="fa fa-people-group"></i> Testimonials</router-link> 
                     </li>
-                    <li class="nav-item">
-                        <router-link to="/contact"><i class="fa fa-phone"></i> Contact</router-link>
+                    <li class="nav-item mx-2">
+                        <router-link class="link" to="/contact"><i class="fa fa-phone"></i> Contact</router-link>
                     </li>
                 </ul>
             </div>
@@ -50,7 +50,9 @@ nav {
     z-index: 1;
 }
 
-
+.link{
+    text-decoration: none;
+}
 .navbar-links {
     height: 100%;
 }
@@ -77,10 +79,13 @@ nav {
 
 nav a {
     font-weight: bold;
-    color: #f7ffd7;
+    color: #f5f5f5;
 }
 
 nav a.router-link-exact-active {
+    color:   #76d337;
+}
+nav a:hover {
     color:   #76d337;
 }
 

@@ -5,7 +5,7 @@
       
       <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item" v-for="item in testimonials" :key="item.id" :class="item.class">
+          <div class="carousel-item eish" v-for="item in testimonials" :key="item.id" :class="item.class">
             <img class="rounded-circle shadow-1-strong mb-4" :src="item.img" width="150px">
               <div class="card container">
                 <h5 style="margin-top: 1rem;">{{ item.name }}</h5>
@@ -95,5 +95,9 @@ export default {
 <style scoped>
 #testimonials {
   min-height: 100vh;
+}
+
+.eish{
+  color: black;
 }
 </style>

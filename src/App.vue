@@ -23,7 +23,7 @@ export default{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color-scheme: white;
+  color: white;
   background: url('https://i.postimg.cc/vBMvmyH0/2049.jpg') no-repeat center center/cover;
   background-attachment: fixed;
   
