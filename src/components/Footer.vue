@@ -19,22 +19,23 @@
                   <h6 class="text-uppercase  fw-bold mb-4">Contact</h6>
                  
                             <p>
-                                <i class="fa fa-github me-3">
-                                    <a href="https://github.com/NabilaSam"></a>
+                                <a href="https://github.com/NabilaSam">
+                                        <i class="fa fa-github me-3">
                                     
-                                </i>: Github
+                                </i>: Github </a>
                             </p>
                             <p>
                                 <i class="fa fa-linkedin me-3">
-                        <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/"></a>
-                        </i>: Linkedin
+                                </i>: Linkedin 
+                                <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/">
+                    </a>
                   </p>
                   <p>
                     <i class="fas fa-envelope me-3"></i>
                     : nabzluciano@gmail.com
                   </p>
                   <p>
-                   <i class="fa fa-phone fa-0.5x"> </i> +27 12 345 6789
+                   <i class="fa fa-phone fa-0.5x"> </i> +27 82 474 9772
                   </p>
                   
                   <button type="button" class="btn-secondary btn btn-rounded">

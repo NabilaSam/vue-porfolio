@@ -15,9 +15,13 @@
                      <p class="title" 
                      style="color: rgb(255, 255, 255);
                      background-color: rgba(0,0,0,0.3);">
-                       <b> A Chemical Scientist <br />
-                        & <br>
-                       An Intern Web Developer</b>
+                       <br>
+                       <b>
+                       Intern Web Developer
+                    <br>
+                &
+            <br>
+        Chemical Scientist</b>
                      </p>
                      <div>
                        
@@ -26,7 +30,7 @@
              </div>
               <!-- fade in Landing text -->
              <div class="animate__animated animate__fadeIn animate__delay-2s">
-                <h3  style="color: black; text-shadow: 2px 2px whitesmoke;"> WHAT CAN I CREATE FOR YOU? </h3>
+                <h3  style="color: #f2f2f2; text-shadow: 2px 2px black;"> WHAT CAN I CREATE FOR YOU? </h3>
              </div>
          </div>
         </div>
