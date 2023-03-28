@@ -1,8 +1,12 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-black" style="width:100%;">
+    <nav class="navbar navbar-expand-lg bg-transparent" style="width:100%;">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Nabila</a>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
+            <a class="navbar-brand navbrand" href="#">
+                <img src="https://i.postimg.cc/vmS78tzy/nabila-logo-fococlipping-standard.png" 
+                alt="Nabila"
+                width="200" height="">
+            </a>
+            <button class="navbar-toggler backtog" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,6 +44,20 @@ export default {
 </script>
 
 <style scoped>
+
+.navbrand{
+    color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+.backtog{
+    background-color: #f2f2f2;
+}
+
+.backtog:hover{
+    background-color: rgb(232, 99, 17);
+}
+
 nav {
     display: flex;
     position: relative;
@@ -79,19 +97,20 @@ nav {
 
 nav a {
     font-weight: bold;
-    color: #f5f5f5;
+    color: #f2f2f2;;
 }
 
 nav a.router-link-exact-active {
-    color:   #76d337;
+    color:  rgb(232, 99, 17);
 }
 nav a:hover {
-    color:   #76d337;
+    color:  rgb(232, 99, 17);
 }
 
 .web-title {
     font-size: 1.5rem;
     margin: .5rem;
+    color: #f2f2f2;
 }
 
 .toggle-button {
@@ -109,7 +128,7 @@ nav a:hover {
     height: 3px;
     width: 100%;
     background-color: #f2f2f2;
-    border-radius: 10px;
+    border-radius: 20px 50px;
 }
 
 

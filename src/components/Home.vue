@@ -1,9 +1,36 @@
 <template>
-    <div id="home" class="container landing" style="margin-top:20%;">
-        <h1>Hi, Welcome to Nabila Samsodien's portfolio</h1>
-
-        <button class="btn btn-rounded"> <a href="#projects"> View projects</a></button>
-    </div>
+    <section class="body">
+            <!-- landing page -->
+            <div class="min-vh-100">
+                <div class="grid-container">
+                <!-- Slide In Id Card -->
+               <div >
+                   <div class="cardtestimonial">
+                     <img
+                       src="https://i.postimg.cc/VsZwfQqb/IMG-20221013-131514.jpg"
+                       alt="profilepic"
+                       style="width: 60%"
+                     />
+                     <h2 class="card_header">Nabila Samsodien</h2>
+                     <p class="title" 
+                     style="color: rgb(255, 255, 255);
+                     background-color: rgba(0,0,0,0.3);">
+                       <b> A Chemical Scientist <br />
+                        & <br>
+                       An Intern Web Developer</b>
+                     </p>
+                     <div>
+                       
+                     </div>
+                  </div>
+             </div>
+              <!-- fade in Landing text -->
+             <div class="animate__animated animate__fadeIn animate__delay-2s">
+                <h3  style="color: black; text-shadow: 2px 2px whitesmoke;"> WHAT CAN I CREATE FOR YOU? </h3>
+             </div>
+         </div>
+        </div>
+      </section>  
 </template>
 
 <script>
@@ -14,27 +41,52 @@
 
 <style scoped>
 
-    h1{
-        color: #f2f2f2;
+    /* My landing page Grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+  .grid-container>div:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/3;
+  }
+  .grid-container>div:nth-child(2) {
+    grid-column: 2/4;
+    grid-row: 2/3;
+  }
 
+
+
+/* Slide in ID card */
+
+.cardtestimonial{
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    background-color: transparent;
+    margin-top: 10%;
+    box-shadow: 0 4px 8px 0 #f2f2f2;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+    float: left;
+    animation: slidein 2s ease 0s 1 forwards; 
+    max-width: 300px;
+}
+
+@keyframes slidein {
+    from{
+        transform: translateX(1244px);
     }
-    .landing{
+    to{
+        transform: translateX(0px);
+    }
+}
+
+.landing{
        min-height: 100vh;
     }
-
-    button a{
-        text-decoration: none;
-        background-color: #030701;
-        color: #f7ffd7;
-        border: 4px solid;
-        padding: 2px;
-        text-decoration: none;
-        border-image: linear-gradient( to bottom right, #76d337,  #030701);
-        border-color: linear-gradient( to bottom right, #76d337,  #030701);
- }
-
-    button a:hover{
-        background:linear-gradient( to bottom right, #76d337,  #030701); ;
-  
-    }
 </style>
+

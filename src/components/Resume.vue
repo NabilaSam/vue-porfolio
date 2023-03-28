@@ -152,7 +152,7 @@ export default {
 }
 
 .timeline-badge {
-  background-color: #76d337 !important;
+  background-color: rgb(232, 99, 17) !important;
 }
 
 .timeline-title {

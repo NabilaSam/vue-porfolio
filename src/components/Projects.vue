@@ -68,7 +68,7 @@ main{
 }
 .card {
     background: #030701;
-    border: 2px solid #76d337;
+    border: 2px solid rgb(232, 99, 17);
     color:  #f7ffd7;
     margin-bottom: 2rem;
     opacity: 0.5 black;
@@ -79,12 +79,13 @@ main{
     border: 4px solid;
     padding: 2px;
     text-decoration: none;
-    border-image: linear-gradient( to bottom right, #76d337,  #030701);
-    border-color: linear-gradient( to bottom right, #76d337,  #030701);
+    border-image: linear-gradient( to bottom right, rgb(232, 99, 17), rgb(255, 250, 246));
+    border-color: linear-gradient( to bottom right, rgb(232, 99, 17), rgb(255, 250, 246));
   }
 
   .card-body a:hover{
-    background:linear-gradient( to bottom right, #76d337,  #030701); ;
+    background:linear-gradient( to bottom right, rgb(232, 99, 17), rgb(255, 250, 246)); 
+    color: black !important;
   }
 
   col{
