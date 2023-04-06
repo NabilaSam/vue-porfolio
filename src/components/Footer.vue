@@ -19,20 +19,21 @@
                   <h6 class="text-uppercase  fw-bold mb-4">Contact</h6>
                  
                             <p>
-                                <a href="https://github.com/NabilaSam">
+                                <a href="https://github.com/NabilaSam" target="_blank">
                                         <i class="fa fa-github me-3">
                                     
-                                </i>: Github </a>
+                                </i>: NabilaSam</a>
                             </p>
                             <p>
-                                <i class="fa fa-linkedin me-3">
-                                </i>: Linkedin 
-                                <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/">
+                              <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/" target="_blank">
+                                  <i class="fa fa-linkedin me-3">
+                                  </i>: Linkedin 
                     </a>
                   </p>
                   <p>
                     <i class="fas fa-envelope me-3"></i>
-                    : nabzluciano@gmail.com
+                    <a href="mailto: nabilasamsodien@gmail.com" target="_blank">
+                    : nabilasamsodien@gmail.com </a>
                   </p>
                   <p>
                    <i class="fa fa-phone fa-0.5x"> </i> +27 82 474 9772

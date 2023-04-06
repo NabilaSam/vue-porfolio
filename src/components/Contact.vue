@@ -28,24 +28,6 @@
                     </p>
                 </form>
             </div>
-
-            <div class="contacts contact-wrapper">
-                <h4 style="color:#ffffff;">Contact Me</h4>
-                <ul>
-                    <li> <a href="https://www.linkedin.com/in/nabila-samsodien-a9bb6918a/" target="_blank"><i class="fa fa-linkedin fa-2x"></i> linkedin</a> <br>
-                    </li>
-
-                    <li>
-                        <a href="https://github.com/NabilaSam"><i class="fa fa-github fa-2x" target="_blank"> </i> NabilaSam </a> <br>
-                    </li>
-
-                    <li> <a href="mailto: nabilasamsodien@gmail.com" target="_blank"> <i class="fa fa-envelope fa-2x"> </i> nabilasamsodien@gmail.com</a> <br>
-                    </li>
-
-                    <li> <a href="tel:+27824749772"> <i class="fa fa-phone fa-2x"> </i> +27 82 474 9772</a> <br>
-                    </li>
-                </ul>
-            </div>
         </div>
     </div>
 </template>

@@ -1,8 +1,8 @@
 <template>
-    <nav class="navbar navbar-expand-lg bg-transparent" style="width:100%;">
+    <nav class="navbar navbar-expand-lg bg-transparent navbar-fixed-top" style="width:100%;">
         <div class="container-fluid">
             <a class="navbar-brand navbrand" href="#">
-                <img src="https://i.postimg.cc/vmS78tzy/nabila-logo-fococlipping-standard.png" 
+                <img src="https://i.postimg.cc/dVSZZPqt/NA-3-fococlipping-standard.png" 
                 alt="Nabila"
                 width="200" height="">
             </a>
